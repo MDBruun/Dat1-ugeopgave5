@@ -1,0 +1,31 @@
+@startuml
+'https://plantuml.com/object-diagram
+class Car
+{
+Car: make
+Car: model
+Car: year
+Car: bodyStyle
+Car: Driver
+}
+@enduml
+
+@startuml
+class Driver
+{
+Driver: name
+Driver: age
+}
+@enduml
+
+@startuml
+class main
+{
+}
+@enduml
+@startuml
+main --> Driver
+Driver -->Car
+main --> Car
+
+@enduml
